@@ -38,7 +38,16 @@
 	<form method="post" action="" enctype="multipart/form-data">
 		{% csrf_token %}
 				<div class="form-group">
-					<label for="exampleFormControlInput1">Email address</label>
+					<label for="exampleFormControlInput1">From: Email address</label>
+					<input type="email" class="form-control" name="fromemail" placeholder="name@example.com">
+				</div>
+				<div class="form-group">
+					<label for="exampleFormControlInput1">Password</label>
+					<input type="password" class="form-control" name="password" placeholder="Password">
+				</div>
+
+				<div class="form-group">
+					<label for="exampleFormControlInput1">To: Email address</label>
 					<input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
 				</div>
 				<div class="form-group">
