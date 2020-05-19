@@ -34,22 +34,48 @@
 				</div>
 	</nav>
 
-
+<div class="container">
+	<div class="row justify-content-md-center">
 	<form method="post" action="" enctype="multipart/form-data">
 		{% csrf_token %}
-				<div class="form-group">
-					<label for="exampleFormControlInput1">From: Email address</label>
-					<input type="email" class="form-control" name="fromemail" placeholder="name@example.com">
-				</div>
-				<div class="form-group">
-					<label for="exampleFormControlInput1">Password</label>
-					<input type="password" class="form-control" name="password" placeholder="Password">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="exampleFormControlInput1">From: Email address</label>
+							<input type="email" class="form-control" name="fromemail" placeholder="name@example.com">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group">
+							<label for="exampleFormControlInput1">Password</label>
+							<input type="password" class="form-control" name="password" placeholder="Password">
+						</div>
+						
+					</div>
 				</div>
 
-				<div class="form-group">
-					<label for="exampleFormControlInput1">To: Email address</label>
-					<input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="form-group">
+							<label for="exampleFormControlInput1">To: Email address</label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="form-group">
+							<label for="exampleFormControlInput1">BCC</label>
+							<input type="email" class="form-control" name="bcc" placeholder="name@example.com">
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="form-group">
+							<label for="exampleFormControlInput1">CC</label>
+							<input type="email" class="form-control" name="cc" placeholder="name@example.com">
+						</div>
+					</div>
 				</div>
+				
+
 				<div class="form-group">
 					<label for="exampleFormControlInput1">Subject</label>
 					<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject to the mail">
@@ -78,10 +104,9 @@
 
 
 	</form>
+</div></div>
 
-			<h1>{{text}}</h1>
-
-
+			
 
 			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
