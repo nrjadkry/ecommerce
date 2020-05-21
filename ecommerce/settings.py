@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
+import django_heroku
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,7 +27,7 @@ SECRET_KEY = 'vpc%0il66w4gj*-yfe)8t#nv3(-a!udt*qlhcg(9+ny1v7oqf_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.1.10','127.0.0.1']
 
 
 # Application definition
@@ -142,3 +144,5 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'static/images')
 # EMAIL_USE_TLS = True
 # EMAIL_USE_SSL=False
 
+
+django_heroku.settings(locals())
