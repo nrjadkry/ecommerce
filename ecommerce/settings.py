@@ -25,9 +25,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'vpc%0il66w4gj*-yfe)8t#nv3(-a!udt*qlhcg(9+ny1v7oqf_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['192.168.1.10','127.0.0.1']
+ALLOWED_HOSTS = ['192.168.1.10','127.0.0.1','multiplemail.herokuapp.com']
 
 
 # Application definition
